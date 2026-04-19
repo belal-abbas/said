@@ -236,3 +236,89 @@ input, textarea { width: 100%; padding: 16px; margin-bottom: 20px; border: 1px s
     .review-cards-container { grid-template-columns: 1fr; } /* صف واحد على الموبايل */
     .ratings-bar { flex-direction: column; gap: 15px; }
 }
+.add-review-form {
+    background: linear-gradient(145deg, #d4af37, #b8860b); /* تدرج ذهبي فخم */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 650px;
+    margin: 50px auto 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #fff; /* خليت الكلام أبيض عشان يبان على الذهبي */
+}
+
+.add-review-form h3 { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.2rem; 
+    margin-bottom: 10px;
+    color: #001f3f; /* عنوان بلون كحلي غامق عشان يكسر اللون ويظهر */
+}
+
+.add-review-form p {
+    color: #001f3f;
+    font-weight: 500;
+}
+
+.stars-to-select label {
+    color: #001f3f; /* النجوم وهي مش مختارة تكون كحلي */
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+/* تنسيق النجوم بالعرض وإخفاء الدوائر */
+.stars-to-select {
+    display: flex;
+    flex-direction: row-reverse; /* عشان التقييم يشتغل من الشمال لليمين صح */
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.stars-to-select input {
+    display: none; /* إخفاء الدوائر البيضاء */
+}
+
+.stars-to-select label {
+    font-size: 35px;
+    color: #001f3f; /* لون الكحلي الأساسي */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+/* تأثير التلوين عند الوقوف بالماوس أو الاختيار */
+.stars-to-select label:hover,
+.stars-to-select label:hover ~ label,
+.stars-to-select input:checked ~ label {
+    color: #fff; /* قلب النجوم للون الأبيض */
+}
+
+
+.add-review-form input, .add-review-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9); /* أبيض شفاف شوية */
+    color: #333;
+}
+
+.submit-review-btn {
+    background-color: #001f3f; /* زرار كحلي فخم */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.4s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.submit-review-btn:hover {
+    background-color: #fff;
+    color: #001f3f;
+    transform: scale(1.05); /* حركة تكبير بسيطة عند اللمس */
+}
