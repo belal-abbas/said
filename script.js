@@ -49,3 +49,4 @@ window.addEventListener('click', (e) => {
 
 // جلب السنة الحالية ووضعها داخل العنصر اللي واخد id="year"
 document.getElementById("year").textContent = new Date().getFullYear();
+
