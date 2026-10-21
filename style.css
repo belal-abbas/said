@@ -46,8 +46,8 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg-color); color: #
 
 /* Hero Images (تشطيب + نجيل) */
 .hero-images-container { position: relative; height: 500px; }
-.img-finished { width: 85%; border-radius: 15px; position: absolute; top: 0; right: 0; z-index: 1; box-shadow: var(--shadow); transition: 0.5sEase-in-out; }
-.img-work { width: 65%; border-radius: 15px; border: 6px solid white; position: absolute; bottom: 0; left: 0; z-index: 2; box-shadow: var(--shadow); transition: 0.5sEase-in-out; }
+.img-finished { width: 85%; border-radius: 15px; position: absolute; top: 0; right: 0; z-index: 1; box-shadow: var(--shadow); transition: 0.5s ease-in-out; }
+.img-work { width: 65%; border-radius: 15px; border: 6px solid white; position: absolute; bottom: 0; left: 0; z-index: 2; box-shadow: var(--shadow); transition: 0.5s ease-in-out; }
 .hero-images-container:hover .img-finished { transform: translate(-10px, 10px); }
 .hero-images-container:hover .img-work { transform: scale(1.1); }
 
@@ -68,9 +68,9 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg-color); color: #
 .projects { padding: 100px 8%; background: var(--white); }
 .project-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .project-item { position: relative; border-radius: 10px; overflow: hidden; height: 300px; cursor: pointer; }
-.project-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5sEase-in-out; }
+.project-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease-in-out; }
 .project-overlay { position: absolute; bottom: 0; left: 0; width: 100%; height: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)); color: white; display: flex; align-items: flex-end; justify-content: flex-start; padding: 20px; transition: 0.5s ease-in-out; }
-.project-overlay h3 { font-family: 'Poppins', sans-serif; font-size: 1.1rem; opacity: 0; transition: 0.3sEase-in-out; }
+.project-overlay h3 { font-family: 'Poppins', sans-serif; font-size: 1.1rem; opacity: 0; transition: 0.3s ease-in-out; }
 .project-item:hover img { transform: scale(1.1); }
 .project-item:hover .project-overlay { height: 100%; }
 .project-item:hover .project-overlay h3 { opacity: 1; }
@@ -321,4 +321,11 @@ input, textarea { width: 100%; padding: 16px; margin-bottom: 20px; border: 1px s
     background-color: #fff;
     color: #001f3f;
     transform: scale(1.05); /* حركة تكبير بسيطة عند اللمس */
+}
+
+/* ويدجت ريفيوز جوجل (Elfsight) */
+.google-reviews-widget {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
 }
